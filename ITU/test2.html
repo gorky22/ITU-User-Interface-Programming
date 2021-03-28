@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <meta charset="utf-8">
+    <meta name="viewport"
+           content="width=device-width, initial-scale=1">      
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text:400,400i,600|Montserrat:200,300,400, 600, 700" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="stylesheet" type="text/css" href="test.css">
+    <link rel="stylesheet" type="text/css" href="test2.css">
+   
+    <title>testy na autoskolu</title>
+
+    <script   src="https://code.jquery.com/jquery-3.5.1.min.js"   integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="   crossorigin="anonymous"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="json/main.js"></script>
+  
+    <script src="json/test2.js"></script>
+    <link rel = "icon" type = "image/png" href = "img/bat.png">
+    <link rel = "apple-touch-icon" type = "img/png" href = "img/bat.png"/>
+  </head> 
+</head>
+<body onresize="screen_resize()" onload="name_display()"  >
+   
+    <nav class="navbar smart-scroll  navbar-expand-sm navbar-light bg-light fixed-top" >
+                
+        <a href="./main.html"  class="navbar-brand"><img src="img/car.png" alt="icon" width="40" height="40" ></a>  
+          
+          <div class="colapse navbar-colapse col text-center"  id="menu">
+              <ul  class="navbar-nav navbar-colapse col text-center  " id="daco"> 
+                  <li class="nav-item " id="nav"> 
+                    <a class="nav-link"  href="otebe.html">datum testov</a> 
+                  </li>
+                  <li class="nav-item " id="nav"> 
+                        <a class="nav-link"  href="test2.html">test na ostro </a> 
+                      </li>
+                  <li class="nav-item " id="nav"> 
+                      <a class="nav-link"  href="nastavenia.html">nastavenia</a> 
+                    </li>
+                  <li class="nav-item" id="nav"> 
+                      <a class="nav-link" href="test.html">testy</a> 
+                    </li>
+                    
+                  <li class="nav-item" id="nav"> 
+                      <a class="nav-link" href="znacky.html">znacky</a> 
+                  </li>
+
+                  <li class="nav-item" id="nav"> 
+                    <a class="nav-link" href="main.html">menu</a> 
+                </li>
+                      
+                  <li class="nav-item" id="nav"> 
+                    <a class="nav-link" href="#section-home">kontakt</a> 
+                  </li>
+                
+                </ul>
+          </div>
+
+          <div class="cas" >zostava vam <span id="time">05:00</span> minut!</div>
+          <div>
+                
+          <div>
+              <a href="./main_page.html"  class="navbar-brand"> Vitaj <strong id="name"></strong>
+           </a>  </div>
+
+           <div>
+              <a href="./main_page.html"  class="navbar-brand"> dni do testov: <strong id="days_to_exam">nieje nastavene</strong>
+           </a>  </div>
+          </div>
+
+          <button class="navbar-toggler">
+            <span class="navbar-toggler-icon" href="javascript:void(0);"  onclick="myFunction()" ></span>
+          </button>   
+    </nav>
+
+    
+    <div class="x  container text-center" id="whole_quesion" onload="question()">
+      
+
+      <div id="questions container " class="questions">
+       
+
+        <div class="row justify-content-md-start a">
+            <div class="id d-flex justify-content-center" id="id_question">
+                <div class="number">1.</div>
+                <div class="points">1 bod</div>
+            </div>
+            <div class="question -md-12" id="question1">Question</div>
+        </div>
+        <div id="answer-buttons"  class="col" >
+          <div>
+            
+         
+              <button type="button" class="btn btn-outline-dark flex b"  id="11">
+                  <div class="id flex" id="id_question">a)</div>
+                  <div class="question flex"  >sú nadradené pokynom vyplývajúcim z dopravných značiek, ale nie sú nadradené pokynom vyplývajúcim z dopravných zariadení</div>
+              </button>
+          <button type="button" class="btn btn-outline-dark flex b"  id="12">
+              <div class="id flex" id="id_question">b)</div>
+              <div class="question flex" >sú nadradené pokynom vyplývajúcim z dopravných značiek, ale nie sú nadradené pokynom vyplývajúcim z dopravných zariadení</div>
+          </button>
+          <button type="button" class="btn btn-outline-dark flex b"  id="13">
+              <div class="id flex" id="id_question">c)</div>
+              <div class="question flex" >sú nadradené pokynom vyplývajúcim z dopravných značiek, ale nie sú nadradené pokynom vyplývajúcim z dopravných zariadení</div>
+          </button>
+
+        </div>
+
+        
+      </div>
+
+      
+    </div>
+
+    <div id="questions container "  class="questions">
+        <div class="row justify-content-md-center a">
+                <div class="id d-flex justify-content-center" id="id_question">
+                        <div class="number">2.</div>
+                        <div class="points">1 bod</div>
+                    </div>
+            <div class="question -md-12" id="question2">Question</div>
+        </div>
+        <div id="answer-buttons"  class="col" >
+          <div>
+            
+         
+              <button type="button" class="btn btn-outline-dark flex b"   id="21">
+                  <div class="id flex" id="id_question">a)</div>
+                  <div class="question flex">sú nadradené pokynom vyplývajúcim z dopravných značiek, ale nie sú nadradené pokynom vyplývajúcim z dopravných zariadení</div>
+              </button>
+          <button type="button" class="btn btn-outline-dark flex b"  id="22">
+              <div class="id flex" id="id_question">b)</div>
+              <div class="question flex">sú nadradené pokynom vyplývajúcim z dopravných značiek, ale nie sú nadradené pokynom vyplývajúcim z dopravných zariadení</div>
+          </button>
+          <button type="button" class="btn btn-outline-dark flex b"  id="23">
+              <div class="id flex" id="id_question">c)</div>
+              <div class="question flex">sú nadradené pokynom vyplývajúcim z dopravných značiek, ale nie sú nadradené pokynom vyplývajúcim z dopravných zariadení</div>
+          </button>
+
+        </div>
+
+        
+      </div>
+
+      
+    </div>
+
+    <div id="questions container " class="questions">
+        <div class="row justify-content-md-center a">
+                <div class="id d-flex justify-content-center" id="id_question">
+                        <div class="number">3.</div>
+                        <div class="points">1 bod</div>
+                    </div>
+            <div class="question -md-12" id="question3">Question</div>
+        </div>
+        <div id="answer-buttons"  class="col" >
+          <div>
+            
+         
+              <button type="button" class="btn btn-outline-dark flex b"  id="31">
+                  <div class="id flex" id="id_question">a)</div>
+                  <div class="question flex">sú nadradené pokynom vyplývajúcim z dopravných značiek, ale nie sú nadradené pokynom vyplývajúcim z dopravných zariadení</div>
+              </button>
+          <button type="button" class="btn btn-outline-dark flex b"  id="32">
+              <div class="id flex" id="id_question">b)</div>
+              <div class="question flex">sú nadradené pokynom vyplývajúcim z dopravných značiek, ale nie sú nadradené pokynom vyplývajúcim z dopravných zariadení</div>
+          </button>
+          <button type="button" class="btn btn-outline-dark flex b"  id="33">
+              <div class="id flex" id="id_question">c)</div>
+              <div class="question flex">sú nadradené pokynom vyplývajúcim z dopravných značiek, ale nie sú nadradené pokynom vyplývajúcim z dopravných zariadení</div>
+          </button>
+
+        </div>
+
+        
+      </div>
+
+      
+    </div>
+
+    <div id="questions container " class="questions">
+        <div class="row a">
+                <div class="id d-flex justify-content-center" id="id_question">
+                        <div class="number">4.</div>
+                        <div class="points">1 bod</div>
+                    </div>
+            <div class="question -md-12" id="question4">Question</div>
+        </div>
+        <div id="answer-buttons"  class="col" >
+          <div>
+            
+         
+              <button type="button" class="btn btn-outline-dark flex b"  id="41">
+                  <div class="id flex" id="id_question">a)</div>
+                  <div class="question flex">sú nadradené pokynom vyplývajúcim z dopravných značiek, ale nie sú nadradené pokynom vyplývajúcim z dopravných zariadení</div>
+              </button>
+          <button type="button" class="btn btn-outline-dark flex b"  id="42">
+              <div class="id flex" id="id_question">b)</div>
+              <div class="question flex" >sú nadradené pokynom vyplývajúcim z dopravných značiek, ale nie sú nadradené pokynom vyplývajúcim z dopravných zariadení</div>
+          </button>
+          <button type="button" class="btn btn-outline-dark flex b"  id="43">
+              <div class="id flex" id="id_question">c)</div>
+              <div class="question flex" >sú nadradené pokynom vyplývajúcim z dopravných značiek, ale nie sú nadradené pokynom vyplývajúcim z dopravných zariadení</div>
+          </button>
+
+        </div>
+
+        
+      </div>
+
+      
+    </div>
+
+    <div id="questions container " class="questions">
+        <div class="row justify-content-md-center a">
+                <div class="id d-flex justify-content-center" id="id_question">
+                        <div class="number">5.</div>
+                        <div class="points">1 bod</div>
+                    </div>
+            <div class="question -md-12" id="question5">Question</div>
+        </div>
+        <div id="answer-buttons"  class="col" >
+          <div>
+            
+         
+              <button type="button" class="btn btn-outline-dark flex b"  id="51">
+                  <div class="id flex" id="id_question">a)</div>
+                  <div class="question flex">sú nadradené pokynom vyplývajúcim z dopravných značiek, ale nie sú nadradené pokynom vyplývajúcim z dopravných zariadení</div>
+              </button>
+          <button type="button" class="btn btn-outline-dark flex b"  id="52">
+              <div class="id flex" id="id_question">b)</div>
+              <div class="question flex">sú nadradené pokynom vyplývajúcim z dopravných značiek, ale nie sú nadradené pokynom vyplývajúcim z dopravných zariadení</div>
+          </button>
+          <button type="button" class="btn btn-outline-dark flex b"  id="53">
+              <div class="id flex" id="id_question">c)</div>
+              <div class="question flex" >sú nadradené pokynom vyplývajúcim z dopravných značiek, ale nie sú nadradené pokynom vyplývajúcim z dopravných zariadení</div>
+          </button>
+
+        </div>
+
+        
+      </div>
+
+      
+    </div>
+
+    <div id="questions container " class="questions">
+        <div class="row justify-content-md-center a">
+                <div class="id d-flex justify-content-center" id="id_question">
+                        <div class="number">6.</div>
+                        <div class="points">2 body</div>
+                    </div>
+            <div class="question -md-12" id="question6"> Táto dopravná značka informuje o</div>
+        </div>
+        <div id="answer-buttons"  class="col" >
+          <div>
+            
+              <img src="img/vpravo.png" alt="" id="obr" style="width:200px;height:200px;">
+              <button type="button" class="btn btn-outline-dark flex b"  id="61">
+                  <div class="id flex" id="id_question">a)</div>
+                  <div class="question flex">sú nadradené pokynom vyplývajúcim z dopravných značiek, ale nie sú nadradené pokynom vyplývajúcim z dopravných zariadení</div>
+              </button>
+          <button type="button" class="btn btn-outline-dark flex b"  id="62">
+              <div class="id flex" id="id_question">b)</div>
+              <div class="question flex">sú nadradené pokynom vyplývajúcim z dopravných značiek, ale nie sú nadradené pokynom vyplývajúcim z dopravných zariadení</div>
+          </button>
+          <button type="button" class="btn btn-outline-dark flex b"  id="63">
+              <div class="id flex" id="id_question">c)</div>
+              <div class="question flex" >sú nadradené pokynom vyplývajúcim z dopravných značiek, ale nie sú nadradené pokynom vyplývajúcim z dopravných zariadení</div>
+          </button>
+
+        </div>
+
+        
+      </div>
+
+      
+    </div>
+
+    <div id="questions container " class="questions">
+        <div class="row justify-content-md-center a">
+                <div class="id d-flex justify-content-center" id="id_question">
+                        <div class="number">7.</div>
+                        <div class="points">3 body</div>
+                    </div>
+            <div class="question -md-12" id="question7">v akom poradi prejdu auta</div>
+        </div>
+        <div id="answer-buttons"  class="col" >
+          <div>
+            
+              <img src="img/105.jpg" alt="" id="obrz">
+              <button type="button" class="btn btn-outline-dark flex b"  id="71">
+                  <div class="id flex" id="id_question">a)</div>
+                  <div class="question flex">sú nadradené pokynom vyplývajúcim z dopravných značiek, ale nie sú nadradené pokynom vyplývajúcim z dopravných zariadení</div>
+              </button>
+          <button type="button" class="btn btn-outline-dark flex b"  id="72">
+              <div class="id flex" id="id_question">b)</div>
+              <div class="question flex">sú nadradené pokynom vyplývajúcim z dopravných značiek, ale nie sú nadradené pokynom vyplývajúcim z dopravných zariadení</div>
+          </button>
+          <button type="button" class="btn btn-outline-dark flex b"  id="73">
+              <div class="id flex" id="id_question">c)</div>
+              <div class="question flex" >sú nadradené pokynom vyplývajúcim z dopravných značiek, ale nie sú nadradené pokynom vyplývajúcim z dopravných zariadení</div>
+          </button>
+
+        </div>
+
+        
+      </div>
+
+      
+    </div>
+
+    
+<div class="container text-center start"  id="end"> 
+       
+        <button  type="button" id="end_button"  class="btn btn-outline-dark flex b">ukoncit test</button>
+    
+    
+  </div>
+
+  <div class="container text-center last"  id="last"> 
+        <div>
+            <p>Koniec testu ziskali ste <strong id="succes"></strong> na realnom teste by ste <strong id="vys"></strong></p>
+            <a href="test2.html" class="btn btn-secondary btn-lg active" role="button" aria-pressed="true">vygenerovat dalsi test</a>
+        </div>
+      </div>
+
+    
+</div>
+
+
+</div >
+
+<div class="container text-center start"  id="start"> 
+       
+            <button  type="button" id="btn" class="btn btn-outline-dark flex b">zacat test</button>
+        
+        
+      </div>
+
+        
+
+
+
+</body>
+</html>

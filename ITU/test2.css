@@ -1,0 +1,26 @@
+.number{
+    width: 84%;
+    margin-left: 4%;
+}
+
+.points{
+
+}
+
+.cas{
+  margin-right: 5%;
+}
+
+.start{
+    margin-top: 10%;
+  }
+  
+  @media (min-width: 700px) {
+  
+    .start{
+      margin-top: 15%;
+     }
+  
+      
+  
+  }

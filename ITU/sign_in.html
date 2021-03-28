@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+</head>
+<body>
+
+
+  <div class="container">
+    <div class="content">
+            <h1>Prihlasit sa</h1>
+            <p>prosim vyplnte formular a prihlaste sa</p>
+            <hr>
+
+            
+            <form id="form" action="main.html" method="GET">
+                <div class="form-group">
+        
+                        <div class="d1">
+                                <label for="name"><b>meno</b></label>
+                        </div>
+                        
+                        <div class="d2">
+                                <input type="text" placeholder="Enter name" name="name" id="name" >
+                        </div>
+        
+                </div>
+                <div class="error" id="error"></div>
+        
+                <div class="form-group">
+        
+                        <div class="d1">
+                            <label for="psw"><b>heslo</b></label>
+                        </div>
+        
+                        <div class="d2">
+                                <input type="password" placeholder="Enter Password" name="psw" id="psw" >
+                        
+                            </div>
+        
+                </div>
+                <div class="error" id="error2"></div>
+        
+                           
+                </div>
+
+                <button class="btn btn-primary" type="submit" class="registerbtn">prihlasit sa</button> 
+            <hr>
+        
+            
+        </form>   
+    </div>
+  </div>
+
+
+
+<script src="json/sign_in.js"></script>
+
+</body>
+</html>
+

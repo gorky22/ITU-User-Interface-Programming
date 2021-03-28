@@ -1,0 +1,48 @@
+html,
+body {
+    height: 100%;
+    background-image: url(img/school.jpg);
+}
+
+.container {
+    
+    text-align: center;
+    margin: auto;
+  
+ 
+    padding: 10px;
+   
+}
+
+.content {
+    max-width: 500px;
+    text-align: center;
+    margin: auto;
+    
+    padding: 10px;
+}
+
+.form-group {
+
+    
+    text-align: center;
+    margin: auto;
+    width: 60%;
+   
+    padding: 10px;
+}
+
+.error {
+    display: none;
+    margin: 10px 0px;
+    padding:12px;
+    color: #D8000C;
+    background-color: #FFD2D2;
+    margin:10px 22px;
+    font-size:0.5em;
+    vertical-align:middle;
+}
+
+.reg {
+    color: white
+}

@@ -1,0 +1,76 @@
+#section-znacky
+ h1{
+  font-size: 4em;
+  margin-top: 10%;
+}
+
+
+#section-znacky
+{
+  background-color:  whitesmoke;
+  text-align: center;
+  
+ 
+}
+
+
+#section-znacky
+ .part1{
+  width: 100%;
+
+}
+
+#section-znacky
+ .box{
+  margin-left: 20%;
+}
+
+#section-znacky
+ img {
+  opacity: 1;
+ 
+  
+  backface-visibility: hidden;
+}
+
+#section-znacky
+ .position-text {
+  opacity: 0;
+  
+  text-align: center;
+}
+
+#section-znacky
+ .box:hover img {
+  opacity: 0.3;
+}
+
+#section-znacky
+ .box:hover .position-text {
+  opacity: 1;
+}
+
+#section-znacky
+ .name {
+  background-color: black;
+  color: white;
+
+}
+
+
+@media (max-width: 700px) {
+
+  #section-znacky
+  h1{
+   font-size: 4em;
+   margin-top: 10%;
+ }
+
+ #section-znacky .box {
+  margin-left: 23%;
+  }
+
+}
+
+
+
